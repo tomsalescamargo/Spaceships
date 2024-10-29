@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2C3333;
+    padding: 0.5rem;
+    color: #fff;
+    text-align: center; /* Centraliza o texto no header */
+    width: 100%;
+}
+
+body {
+    background-color: #395B64;
+    display: flex;
+    flex-direction: column; /* Faz com que os elementos fiquem em coluna */
+    align-items: center;    /* Centraliza horizontalmente os filhos do body */
+    min-height: 100vh;      /* Faz o body ocupar toda a altura da janela */
+}
+
+#menu {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    padding: 20px; /* Adiciona algum espaçamento interno */
+    background-color: #A5C9CA; /* Cor de fundo do menu */
+    color: #2C3333;
+    border-radius: 8px; /* Arredonda os cantos da caixa */
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+    width: 45rem; /* Largura fixa */
+    margin-top: 5rem; /* Espaço acima do menu */
+    margin-bottom: 5rem;
+}
+
+.formBox > *{
+    padding: 0.5rem;
+}
+
+/* Adicione margens diretamente aos inputs e selects */
+.formBox input,
+.formBox select {
+    border-radius: 1rem;
+    margin-bottom: 10px; /* Espaçamento específico entre inputs */
+    width: 100%; /* Faz os inputs ocupar a largura total da caixa */
+    padding: 8px; /* Adiciona um pouco de espaço interno nos inputs */
+}
+
+/* Remove a margem do último elemento para não deixar espaço desnecessário */
+.formBox > *:last-child {
+    margin-bottom: 0;
+}
+
+button {
+    background-color: #2C3333;
+    color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+    padding: 0.5rem;
+}

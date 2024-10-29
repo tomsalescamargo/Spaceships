@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <title>Exercício 1</title>
+</head>
+<body>
+    <header>
+        <h1>Spaceships</h1>
+    </header>
+    <main>
+        <div id="menu">
+            <section class="formBox">
+                <h2>Cadastrar Spaceship</h2>
+                <form>
+                    <label for="name">Nome: </label>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="pilot">Nome do piloto: </label>
+                    <input type="text" id="pilot" name="pilot"><br>
+                    <label for="crewLimit">Capacidade de tripulantes: </label>
+                    <input type="number" name="crewLimit" id="crewLimit"><br>
+                    <button type="button" id="addSpaceShip">Cadastrar</button>
+                </form>
+            </section>
+            <br>
+            <section class="formBox">
+                <h2>Adicionar Membro</h2>
+                <form>
+                    <label for="spaceship-add-select">Escolha uma nave: </label>
+                    <select name="spaceship-add-select" id="spaceship-add-select" class="select"></select><br>
+                    <label for="member-name">Nome: </label>
+                    <input type="text" id="member-name" name="member-name"><br>
+                    <button type="button" id="addMember">Adicionar</button>
+                </form>
+            </section>
+            <br>
+            <section class="formBox">
+                <h2>Enviar Para Missão</h2>
+                <form>
+                    <label for="spaceship-mission-select">Escolha uma nave: </label>
+                    <select name="spaceship-mission-select" id="spaceship-mission-select" class="select"></select>
+                    <button type="button" id="sendSpaceShip">Enviar</button>     
+                </form>
+            </section>
+            <section class="formBox">
+                <h2>Spaceships:</h2>
+                <ul id="spaceships-list"></ul>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
